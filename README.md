@@ -41,3 +41,16 @@ Goals:
    - Backup and recovery systems
 
 ## Infrastructure Layout
+
+## Network Flow 
+Internet → ALB (Public Subnet) → Application Containers (Private Subnet)
+
+
+  Internet  →    Public Subnet    →   Private Subnet   
+                  (Web Tier)            (App Tier)      
+
+                     ALB                Containers 
+
+
+                  NAT Gateway   
+              
